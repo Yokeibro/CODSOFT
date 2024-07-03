@@ -8,6 +8,8 @@ default_responses = [
     "That's interesting! Tell me more."
 ]
 
+# create two types of default responses 
+# positive and negative to seperate responses
 def solve_math(expression):
     try:
         result = sp.sympify(expression)
@@ -153,5 +155,5 @@ def main():
         response = AbrarTechBot_response(user_input)
         print("AbrarTechBot:", response)
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     main()
